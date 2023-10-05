@@ -1,0 +1,262 @@
+/* CSS styling for your Duolingo clone */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS untuk header */
+/* CSS untuk hamburger menu */
+.menu-toggle {
+    display: none; 
+    cursor: pointer;
+    z-index: 2; 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    display: flex;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    @media screen and (max-width: 768px){ 
+        .menu-toggle {
+            display: block; 
+        }
+
+        .header {
+            display: block; 
+        }
+    }
+
+    /* Menampilkan menu utama ketika hamburger aktif */
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        right: 20px; 
+        z-index: 1;
+    }
+
+    nav.active ul li {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .menu-toggle.active-menu {
+        position: flexible; 
+        top: 20px;
+        right: 40px;
+        z-index: 4; 
+    }
+
+    .menu-toggle.active-menu .bar {
+        background-color: black; 
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: black;
+    transition: top 0.3s ease;
+    background-image: url('../Asset/gradasi.jpg');
+    background-size: cover;
+    position: relative; /* Tambahkan ini untuk mengatur z-index */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: red;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.user-info span {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.user-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/* Lesson Content */
+.lesson-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 960px) {
+    .lesson-content { max-width: 600px;
+    }
+  }
+
+.lesson-row {
+    display: flex; 
+    justify-content: center; 
+    
+}
+
+.lesson-card {
+    flex: 0 0 calc(33.33% - 20px); 
+    background-image: url('../Asset/pastel.jpg');
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.lesson-card :hover {
+    transform: translateY(-5px);
+}
+
+.lesson-card img {
+    width: 100%; 
+    max-height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+.lesson-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.start-lesson-button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-lesson-button:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.checklist {
+    list-style-type: none; 
+    padding-left: 0; 
+    font-size: 14px;
+}
+
+.checklist li:before {
+    content: "\2713"; 
+    margin-right: 8px; 
+    color: green; 
+    font-weight: bold; 
+    font-size: 20px;
+    text-align: left;
+}
+
+.checklist li {
+    text-align: left; 
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+
+/* Footer */
+.footer-content {
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../Asset/gradasi.jpg')
+}
+
+.footer-logo img {
+    height: 50px;
+    border-radius: 10%;
+    margin-bottom: 8px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.footer-links a:hover {
+    color: red;
+}

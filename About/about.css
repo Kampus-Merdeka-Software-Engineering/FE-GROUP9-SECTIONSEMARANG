@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Tags */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+span {
+    font-size: .9rem;
+    color: green;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+/* CSS untuk header */
+/* CSS untuk hamburger menu */
+.menu-toggle {
+    display: none; 
+    cursor: pointer;
+    z-index: 2; 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    display: flex;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    @media screen and (max-width: 768px){ 
+        .menu-toggle {
+            display: block; 
+        }
+
+        .header {
+            display: block; 
+        }
+    }
+
+    /* Menampilkan menu utama ketika hamburger aktif */
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        right: 20px; 
+        z-index: 1;
+    }
+
+    nav.active ul li {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .menu-toggle.active-menu {
+        position: flexible; 
+        top: 20px;
+        right: 40px;
+        z-index: 4; 
+    }
+
+    .menu-toggle.active-menu .bar {
+        background-color: black; 
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: black;
+    transition: top 0.3s ease;
+    background-image: url('../Asset/gradasi.jpg');
+    background-size: cover;
+    position: relative; /* Tambahkan ini untuk mengatur z-index */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: red;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.user-info span {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.user-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* About */
+#About-Home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('../Asset/happylearning.jpg');
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+}
+
+#About-Home h2{
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+    flex-direction: row;
+}
+
+#about-container .about-img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#about-container .about-text {
+    width: 40%;
+}
+
+#about-container .about-text h2 {
+    color: black;
+    padding-bottom: 15px;
+}
+
+#about-container .about-text p {
+    color: black;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 960px) {
+    #About-Home h2 {
+        font-size: 2rem; 
+        display: flex;
+    }
+
+    #about-container .about-img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #about-container {
+        flex-direction: column;
+        padding: 3vw 8vw; 
+        align-items: center;
+    }
+}
+
+
+/* Testi */
+#Testi h1{
+    color: black;
+}
+
+#Testi {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#Testi .testi-rev p {
+    font-style: italic;
+}
+
+#Testi .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1.5rem;
+    margin-top: 50px;
+}
+
+#Testi .expert-box .testi-rev {
+    background-image: url(../Asset/pastel.jpg);
+    padding: 40px 5px;
+}
+
+
+/* Team */
+#Team h1{
+    color: black;
+}
+
+#Team {
+    padding: 5vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#Team .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#Team .expert-box .profile {
+    background-image: url(../Asset/pastel.jpg);
+    padding: 20px 4px;
+    text-align: center; 
+}
+
+#Team .expert-box .profile h6 {
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+#Team .expert-box .profile .social-container {
+    margin: 20px 0;
+}
+
+#Team .expert-box .profile .social-container a {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+#Team .expert-box .profile img {
+    width: 100%; 
+    max-height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer-content {
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../Asset/gradasi.jpg');
+}
+
+.footer-logo img {
+    height: 50px;
+    border-radius: 10%;
+    margin-bottom: 8px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.footer-links a:hover {
+    color: red;
+}
