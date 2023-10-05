@@ -32,6 +32,22 @@ body {
       .header {
           display: block; 
       }
+
+      .left-cat {
+        display: block;
+      }
+
+      .courses-container {
+        grid-template-columns: repeat(2, 1fr); /* Ubah menjadi 2 kolom */
+        gap: 1rem;
+      }
+
+      .info-cours h3 {
+        font-size: 24px;
+      }
+      .info-cours p {
+        font-size: 16px;
+      }
   }
 
   /* Menampilkan menu utama ketika hamburger aktif */
@@ -229,12 +245,13 @@ nav a {
 
 /* courses */
 .courses {
-  padding: 2% 6%;
-  margin-top: 5rem;
+  padding: 2% 2%;
+  margin-top: 3rem;
 }
 .courses h2 {
   text-align: center;
   margin-bottom: 1rem;
+  color: #0d0d0d;
 }
 
 .courses-container {
@@ -243,12 +260,14 @@ nav a {
   gap: 2rem;
 }
 .img-courses img {
-  width: 290px;
-  border-radius: 2rem;
+    width: 100%; /* Gambar akan mengisi lebar div kontainernya */
+    max-width: 100%; /* Batasi maksimum lebar gambar agar tidak melebar terlalu besar */
+    height: auto;
 }
 
 .info-cours {
   padding: 2rem;
+  color: #0d0d0d;
 }
 
 .btn-courses {

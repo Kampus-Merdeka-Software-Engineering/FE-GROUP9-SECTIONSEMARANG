@@ -144,7 +144,7 @@ nav a {
     max-width: 100%;
     min-height: 522px;
     min-width: 370px;
-    margin: 0 auto; /* Menengahkan elemen secara horizontal */
+    margin: 0 auto; 
 }
 
 
@@ -155,7 +155,6 @@ nav a {
 .left {
     flex: 1;
     height: 480px;
-    /* background-color: #00b4cf; */
     background: linear-gradient(142.18deg, purple 10%, lightblue 90%);
 }
 
@@ -180,7 +179,6 @@ nav a {
     height: 50%;
     width: 100%;
     text-align: center;
-    /* line-height: 22px; */
 }
 
 .left p {

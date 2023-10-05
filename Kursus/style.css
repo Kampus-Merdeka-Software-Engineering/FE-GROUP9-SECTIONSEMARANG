@@ -130,7 +130,8 @@ nav a {
 }
 
 @media screen and (max-width: 960px) {
-    .lesson-content { max-width: 600px;
+    .lesson-content { 
+        max-width: 600px;
     }
   }
 
