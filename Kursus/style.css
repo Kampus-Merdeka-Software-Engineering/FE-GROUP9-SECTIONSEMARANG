@@ -30,9 +30,9 @@ body {
         }
 
         .header {
-            display: block; 
+            text-align: center;
         }
-    }
+}
 
     /* Menampilkan menu utama ketika hamburger aktif */
     nav.active ul {

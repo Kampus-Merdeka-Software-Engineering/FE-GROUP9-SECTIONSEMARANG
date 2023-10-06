@@ -26,12 +26,13 @@ body {
     @media screen and (max-width: 768px){ 
         .menu-toggle {
             display: block; 
-        }}
+        }
 
-    @media screen and (max-width: 768px){ 
         .header {
-            display: block; 
-        }}
+            text-align: center;
+        }
+    }
+        
 
     /* Menampilkan header ketika hamburger aktif */
     nav.active ul {

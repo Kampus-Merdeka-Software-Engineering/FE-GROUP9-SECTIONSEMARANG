@@ -30,16 +30,15 @@ body {
       }
 
       .header {
-          display: block; 
-      }
-
+        text-align: center;
+    }
+  
       .left-cat {
         display: block;
       }
 
       .courses-container {
-        grid-template-columns: repeat(2, 1fr); /* Ubah menjadi 2 kolom */
-        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr); /* Ubah menjadi 2 kolom */
       }
 
       .info-cours h3 {
@@ -248,6 +247,7 @@ nav a {
   padding: 2% 2%;
   margin-top: 3rem;
 }
+
 .courses h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -287,6 +287,7 @@ nav a {
   transition: 2ms;
   box-shadow: 0 1rem 1rem rgba(235, 235, 245, 0.464);
 }
+
 .course {
   background-image: url(../Asset/pastel.jpg);
   text-align: center;
