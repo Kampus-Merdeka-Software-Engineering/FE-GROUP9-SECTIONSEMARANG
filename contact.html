@@ -61,15 +61,13 @@
 
             <div class="right">
                 <div class="right-container">
-                    <form action="">
+                    <form action="#" id="form-kontak">
                         <h2 class="lg-view">Hubungi Kami</h2>
                         <h2 class="sm-view">Hubungi Kami</h2>
-                        <input type="text" placeholder="Nama">
-                        <input type="email" placeholder="Alamat Email" required>
-                        <!-- <input type="text" placeholder="Perusahaan" autocomplete="off"> -->
-                        <!-- <input type="phone" placeholder="Telepone" autocomplete="off"> -->
-                        <textarea rows="10" placeholder="Pesan"></textarea>
-                        <button>Kirim</button>
+                        <input type="text" placeholder="Nama" id="nama">
+                        <input type="email" placeholder="Alamat Email" required id="email">
+                        <textarea rows="10" placeholder="Pesan" id="pesan"></textarea>
+                        <button id="button">Kirim </button>
                     </form>
                 </div>
             </div>
@@ -99,7 +97,7 @@
         </div>
         </footer>
 
-        <script src="./script.js"></script>
+        <script src="./kontak.js"></script>
     <script>
         // Bagian JavaScript
         const currentYear = new Date().getFullYear();
