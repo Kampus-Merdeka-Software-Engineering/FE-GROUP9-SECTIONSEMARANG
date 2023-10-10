@@ -1,103 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/contact.css" />
     <title>Unigo</title>
-</head>
+  </head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<style>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <style>
     body {
-        font-family: 'Montserrat, sans-serif';
+      font-family: "Montserrat, sans-serif";
     }
-</style>
+  </style>
 
-<body>
-     <!-- Header content -->
-     <header class="header">
-        <div class="logo">
-            <img src="Asset/unigo.png" alt="unigo">
-        </div>
+  <body>
+    <!-- Header content -->
+    <header class="header">
+      <div class="logo">
+        <img src="Asset/unigo.png" alt="unigo" />
+      </div>
 
-        <nav>
-            <ul>
-                <li><a href="beranda.html">Beranda</a></li>
-                <li><a href="about.html">Tentang</a></li>
-                <li><a class="active" href="contact.html">Kontak</a></li>
-                <li><a href="kursus.html">Kursus</a></li>
-            </ul>
-        </nav>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- link untuk logo user -->
-        <div class="user-info">
-            <i class="fa fa-user" id="login-btn"></i>
-            <a href="login.html">Login</a>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a class="active" href="contact.html">Kontak</a></li>
+          <li><a href="kursus.html">Kursus</a></li>
+        </ul>
+      </nav>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <!-- link untuk logo user -->
+      <div class="user-info">
+        <i class="fa fa-user" id="login-btn"></i>
+        <a href="login.html">Login</a>
+      </div>
 
-        <div class="menu-toggle" id="menuToggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+      <div class="menu-toggle" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </header>
 
     <div class="container">
-        <div class="card-container">
-            <div class="left">
-                <div class="left-container">
-                    <img src="Asset/unigo.png" alt="unigo">
-                    <h2>Hello, There!</h2>
-                    <p>Contact or inform us</p>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+      <div class="card-container">
+        <div class="left">
+          <div class="left-container">
+            <img src="Asset/unigo.png" alt="unigo" />
+            <h2>Hello, There!</h2>
+            <p>Contact or inform us</p>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
-
-            <div class="right">
-                <div class="right-container">
-                    <form action="#" id="form-kontak">
-                        <h2 class="lg-view">Hubungi Kami</h2>
-                        <h2 class="sm-view">Hubungi Kami</h2>
-                        <input type="text" placeholder="Nama" id="nama">
-                        <input type="email" placeholder="Alamat Email" required id="email">
-                        <textarea rows="10" placeholder="Pesan" id="pesan"></textarea>
-                        <button id="button">Kirim </button>
-                    </form>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="right">
+          <div class="right-container">
+            <form action="#" id="formContact">
+              <h2 class="lg-view">Hubungi Kami</h2>
+              <h2 class="sm-view">Hubungi Kami</h2>
+              <input type="text" placeholder="Nama" id="name" />
+              <input
+                type="email"
+                placeholder="Alamat Email"
+                required
+                id="email"
+              />
+              <textarea rows="10" placeholder="Pesan" id="pesan"></textarea>
+              <input type="submit" id="submit" name="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
-     <!-- Footer content -->
-     <footer class="footer-content">
-        <div class="footer-logo">
-            <img src="Asset/unigo.png" alt="unigo">
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-                <li><a href="beranda.html">Beranda</a></li>
-                <li><a href="kursus.html">Kursus</a></li>
-            </ul>
-        </div>
-        <div class="footer-social">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="footer-year">
-            &copy; <span id="currentYear"></span> Unigo
-        </div>
-        </footer>
+    <!-- Footer content -->
+    <footer class="footer-content">
+      <div class="footer-logo">
+        <img src="Asset/unigo.png" alt="unigo" />
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="kursus.html">Kursus</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-year">&copy; <span id="currentYear"></span> Unigo</div>
+    </footer>
 
-        <script src="kontak.js"></script>
-</body>
-
+    <script src="kontak.js"></script>
+  </body>
 </html>
+
+<script>
+  const formContact = document.getElementById("formContact");
+  formContact.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+
+    console.log(name, email, pesan);
+
+    fetch("http://localhost:3000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        pesan: pesan,
+      }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          window.alert("Data terkirim!");
+          window.location.href = "beranda.html";
+        } else {
+          window.alert("Terjadi kesalahan saat mengirim data.");
+        }
+      })
+      .catch((error) => {
+        console.error("Terjadi kesalahan: " + error);
+      });
+  });
+</script>
