@@ -139,10 +139,8 @@
           .then((response) => response.json())
           .then((data) => {
             if (data.msg === "Login berhasil") {
-              // Login berhasil, maka pindahkan pengguna ke halaman beranda.html
               window.location.href = "beranda.html";
             } else {
-              // Login gagal, tampilkan pesan kesalahan kepada pengguna
               alert("Login failed. Please check your credentials.");
             }
           })
